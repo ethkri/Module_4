@@ -18,7 +18,7 @@ export async function mint() {
     CONTRACT_ADDRESS
   );
 
-  const owner = await _contract.owner();
+  const owner = await _contract.tokenOwner();
 
   console.log("Owner: " + owner);
 
