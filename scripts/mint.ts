@@ -13,7 +13,10 @@ const amount = AMOUNT_TO_MINT;
 const deployer = DEPLOYER;
 
 export async function mint() {
-  const _contract = await hre.ethers.getContractAt("aval_20", CONTRACT_ADDRESS);
+  const _contract = await hre.ethers.getContractAt(
+    "degenToken",
+    CONTRACT_ADDRESS
+  );
 
   const owner = await _contract.owner();
 

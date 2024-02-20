@@ -2,15 +2,15 @@ import { ethers } from "hardhat";
 import { DEPLOYER } from "../helper-hardhat-config";
 
 async function main() {
-  const aval_20 = await ethers.deployContract("aval_20", [
+  const degenToken = await ethers.deployContract("degenToken", [
     "Degen",
     "DGN",
     DEPLOYER,
   ]);
 
-  await aval_20.waitForDeployment();
+  await degenToken.waitForDeployment();
 
-  console.log(`ERC20 deployed to ${aval_20.target}`);
+  console.log(`ERC20 deployed to ${degenToken.target}`);
 }
 
 // We recommend this pattern to be able to use async/await everywhere

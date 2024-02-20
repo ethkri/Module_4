@@ -7,9 +7,9 @@ const itemPrice = 30;
 const deployer = DEPLOYER;
 
 export async function rateOwnerChange() {
-  console.log(`Aval_20 at ${b_address}`);
+  console.log(`degenToken at ${b_address}`);
 
-  const _contract = await ethers.getContractAt("aval_20", b_address);
+  const _contract = await ethers.getContractAt("degenToken", b_address);
 
   const transferTx = await _contract.addItems(itemName, itemPrice, {
     from: deployer,

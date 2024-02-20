@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity  ^0.8.9;
 
-contract aval_20{
+contract degenToken{
 
     address public owner;
     string public name;

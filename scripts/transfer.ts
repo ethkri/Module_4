@@ -14,7 +14,10 @@ const sender = DEPLOYER; // Replace with actual sender address
 
 export async function transfer() {
   try {
-    const _contract = await ethers.getContractAt("aval_20", CONTRACT_ADDRESS);
+    const _contract = await ethers.getContractAt(
+      "degenToken",
+      CONTRACT_ADDRESS
+    );
 
     const balanceBefore = await _contract.getBalance();
     console.log("Balance: before transfer " + balanceBefore);

@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ethParth/module_4.git"
+    "url": "git+https://github.com/ethkri/Module_4.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ethParth/module_4/issues"
+    "url": "https://github.com/ethkri/Module_4/issues"
   },
-  "homepage": "https://github.com/ethParth/module_4#readme",
+  "homepage": "https://github.com/ethkri/Module_4#readme",
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
     "@nomicfoundation/hardhat-ethers": "^3.0.0",
