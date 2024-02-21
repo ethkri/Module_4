@@ -1,9 +1,14 @@
 import { ethers } from "hardhat";
-import { CONTRACT, DEPLOYER } from "../helper-hardhat-config";
+import {
+  CONTRACT,
+  DEPLOYER,
+  ITEM_NAME,
+  ITEM_PRICE,
+} from "../helper-hardhat-config";
 
 const b_address = CONTRACT;
-const itemName = "Shoes";
-const itemPrice = 30;
+const itemName = ITEM_NAME;
+const itemPrice = ITEM_PRICE;
 const deployer = DEPLOYER;
 
 export async function rateOwnerChange() {
@@ -11,7 +16,7 @@ export async function rateOwnerChange() {
 
   const _contract = await ethers.getContractAt("degenToken", b_address);
 
-  const transferTx = await _contract.addItems(itemName, itemPrice, {
+  const transferTx = await _contract.addItem(itemName, itemPrice, {
     from: deployer,
   });
 

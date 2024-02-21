@@ -6,7 +6,7 @@ const amount = AMOUNT_TO_BURN;
 const deployer = DEPLOYER;
 
 export async function rateOwnerChange() {
-  console.log(`Rate at ${b_address}`);
+  console.log(`Degen Token at ${b_address}`);
 
   const _contract = await ethers.getContractAt("degenToken", b_address);
 
