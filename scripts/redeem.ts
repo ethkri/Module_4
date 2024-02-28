@@ -1,5 +1,5 @@
 import { ethers } from "hardhat";
-import { CONTRACT, DEPLOYER } from "../helper-hardhat-config";
+import { CONTRACT, DEPLOYER, RECIEVER } from "../helper-hardhat-config";
 
 const b_address = CONTRACT;
 const itemId = 0;
